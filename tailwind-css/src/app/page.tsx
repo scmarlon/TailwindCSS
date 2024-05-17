@@ -1,7 +1,7 @@
 "use client";
 export default function Home() {
   return (
-    <body className="bg-slate-100">
+    <body className="bg-slate-200">
       <header className="bg-white px-6 shadow">
         <div className="flex h-16 items-center justify-between">
           <button
@@ -67,6 +67,35 @@ export default function Home() {
               ></img>
             </button>
           </div>
+        </div>
+        <div className="space-y-1 border-t pb-3 pt-2 md:hidden">
+          <a
+            href="#"
+            className="block rounded-md px-3 py-2 bg-sky-600 text-white"
+          >
+            Home
+          </a>
+          <a
+            href="#"
+            className="block rounded-md px-3 py-2 text-slate-700
+             transition-colors hover:bg-sky-600 hover:text-white"
+          >
+            About
+          </a>
+          <a
+            href="#"
+            className="block rounded-md px-3 py-2 text-slate-700
+             transition-colors hover:bg-sky-600 hover:text-white"
+          >
+            Blog
+          </a>
+          <a
+            href="#"
+            className="block rounded-md px-3 py-2 text-slate-700
+             transition-colors hover:bg-sky-600 hover:text-white"
+          >
+            Contact
+          </a>
         </div>
       </header>
     </body>
