@@ -91,7 +91,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="space-y-1 border-t pb-3 pt-2 md:hidden">
+        <div className=" hidden space-y-1 border-t pb-3 pt-2 md:hidden">
           <a
             href="#"
             className="block rounded-md px-3 py-2 bg-sky-600 text-white"
@@ -121,6 +121,42 @@ export default function Home() {
           </a>
         </div>
       </header>
+      <main className="p-4">
+        <article className="overflow-hidden rounded bg-white shadow-lg">
+          <div className="h-52">
+            <img
+              className="h-full w-full object-cover object-center"
+              src="/img/react.png"
+              alt="Desarrollo de una API con React!"
+            ></img>
+          </div>
+          <div className="space-y-3 p-5">
+            <h3 className="text-sm font-semibold text-sky-600">React</h3>
+            <h2 className="text-xl font-semibold leading-tight text-slate-800">
+              Desarrollo de una API con React!
+            </h2>
+            <p className="text-slate-500">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Architecto magni deserunt qui similique voluptatibus nostrum eos
+              porro cum minima totam velit aperiam quaerat dolor, nobis corporis
+              molestiae inventore. Pariatur, expedita.
+            </p>
+          </div>
+          <div className="flex space-x-2 p-5">
+            <img
+              className="h-10 w-10 rounded-full"
+              src="https://ui-avatars.com/api?name=Marlon+Sánchez"
+              alt="Marlon Sánchez"
+            ></img>
+            <div className="flex flex-col justify-center">
+              <span className="text-sm font-semibold text-slate-600 leading-4">
+                Marlon Sánchez
+              </span>
+              <span className="text-sm text-slate-500">Oct 21, 2023</span>
+            </div>
+          </div>
+        </article>
+      </main>
     </body>
   );
 }
